@@ -265,23 +265,21 @@
       </div>
 
 
-
-
-
-    <div class="card-container">
-      <div class="card">
-        <h3><b>Get the Complete Report</b></h3>
-        <p><i>I want to see everything (1000+ polygenic scores)</i></p>
-        <h2 style="font-size: 16px;">$349</h2>
-        <a href="https://www.paypal.com/paypalme/polycypher" class="button">Buy Now</a>
-      </div>
-      <div class="card">
-        <h3><b>Get Individual Polygenic Scores</b></h3>
-        <p><i>I'm interested in only a few polygenic scores</i></p>
-        <h2 style="font-size: 16px;">$10 per score category</h2>
-        <a href="https://www.paypal.com/paypalme/polycypher" class="button">Buy Now</a>
-      </div>
-    </div>
+	<div class="card-container">
+	  <div class="card">
+	    <h3><b>Get the Complete Report</b></h3>
+	    <p><i>I want to see everything (1000+ polygenic scores)</i></p>
+	    <h2 style="font-size: 16px;">$349</h2>
+	    <a href="#" onclick="window.location.href='https://www.paypal.com/paypalme/polycypher';return false;" class="button">Buy Now</a>
+	  </div>
+	  <div class="card">
+	    <h3><b>Get Individual Polygenic Scores</b></h3>
+	    <p><i>I'm interested in only a few polygenic scores</i></p>
+	    <h2 style="font-size: 16px;">$10 per score category</h2>
+	    <a href="#" onclick="window.location.href='https://www.paypal.com/paypalme/polycypher';return false;" class="button">Buy Now</a>
+	  </div>
+	</div>
+  
 
     <body>      
       <br> <br> <br>
@@ -422,25 +420,6 @@
       jQuery('.progress-wrap').on('click', function(e) {
         e.preventDefault();
         jQuery('html, body').animate({})
-  </script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      var page = 2;
-      var post_count = jQuery('#post_contenier').data('count');
-      jQuery('#load_more_btn').click(function() {
-        var data = {
-          'action': 'my_action',
-          'page': page
-        };
-        jQuery.post(ajaxurl, data, function(response) {
-          jQuery('#post_contenier').append(response);
-          if (post_count == page) {
-            jQuery('#load_more_btn').hide();
-          }
-          page++;
-        });
-      })
-    });
   </script>
   </div>
 </div>
@@ -1358,7 +1337,7 @@ p:not(:last-child) {
   100% { transform: translate(0.2px, 0.2px); }
 }
 
-	<style>
+  <style>
 		body {
 			background-color: #F5F5F5;
 			font-family: Helvetica, sans-serif;
