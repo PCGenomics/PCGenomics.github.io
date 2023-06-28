@@ -1192,22 +1192,23 @@ button[type="submit"]:hover {
           </div>
         </div>
       </section>
-
-
-      <div class="form-container" style="margin-block-start: 20px;">
-        <h2 class="form-title" style="margin-block-end: 10px;">We'd love to hear from you!<br>&nbsp;</h2>
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact">
-          <label for="name">Name</label><br>
-          <input type="text" name="name" id="name"><br>
-          <label for="email">Email</label><br>
-          <input type="email" name="email" id="email" required><br>
-          <label for="message">Message</label><br>
-          <textarea name="message" id="message" required></textarea><br>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </div>
+      
+      <form
+      action="https://formspree.io/f/xeqbjlbz"
+      method="POST"
+      style="display: flex; flex-direction: column; align-items: start; inline-size: 75%; max-inline-size: 800px; margin: auto; font-family: Arial, sans-serif; color: #333; background: linear-gradient(to right, #B7E8F0, #E8F6FD); padding: 20px; border-radius: 10px; box-sizing: border-box;"
+    >
+      <label style="margin-block-end: 10px;">
+        Your email:
+        <input type="email" name="email" required style="inline-size: 100%; padding: 10px; border: none; border-radius: 5px; margin-block-start: 5px; box-sizing: border-box;"/>
+      </label>
+      <label style="margin-block-end: 10px;">
+        Your message:
+        <textarea name="message" required style="inline-size: 100%; padding: 10px; border: none; border-radius: 5px; margin-block-start: 5px; block-size: 150px; box-sizing: border-box;"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit" style="background-color: #007BFF; color: white; border: none; border-radius: 5px; padding: 10px 20px; margin-block-start: 10px; cursor: pointer; text-transform: uppercase; font-weight: bold;">Send</button>
+    </form>
 
 
     <div data-carbon-type="footer" data-carbon-id="208" class="carbon carbon-208 carbon-location-footer">
@@ -1336,25 +1337,6 @@ button[type="submit"]:hover {
         jQuery('.progress-wrap').on('click', function(e) {
           e.preventDefault();
           jQuery('html, body').animate({})
-    </script>
-    <script type="text/javascript">
-      jQuery(document).ready(function($) {
-        var page = 2;
-        var post_count = jQuery('#post_contenier').data('count');
-        jQuery('#load_more_btn').click(function() {
-          var data = {
-            'action': 'my_action',
-            'page': page
-          };
-          jQuery.post(ajaxurl, data, function(response) {
-            jQuery('#post_contenier').append(response);
-            if (post_count == page) {
-              jQuery('#load_more_btn').hide();
-            }
-            page++;
-          });
-        })
-      });
     </script>
     </div>
   </div>
