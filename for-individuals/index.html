@@ -203,8 +203,6 @@
       </div>
     </section>
 
-
-
     <header class="subpage-header">
       <div class="subpage-header-background"></div>
       <div class="subpage-header-content">
@@ -212,15 +210,12 @@
         <p class="subpage-header-description" style="color: rgba(255, 255, 255, 0.803); font-weight: normal"><br><i>Unlock the mysteries of DNA with our cutting-edge technology.</i></p>
       </div>
     </header>    
-    
-
-
 
 
     <div class="container">
       <div class="header">
         <div class="title">Individual Polygenic Score Report</div>
-        <div class="subtitle">Your personalized report of polygenic scores</div>
+        <div class="subtitle"><i>Your personalized report of polygenic scores</i></div>
       </div>
       <div class="text">
         Many traits and disorders are affected by a multitude of genes, not just one. We can test for thousands of traits and diseases to identify outliers. We believe this information should be available to everyone, so we offer this service at a lower cost than any other company.
@@ -235,16 +230,16 @@
         The process begins when you email us your raw DNA data file. Once we process your file, you'll get a personalized report containing your polygenic scores. We include the scientific study that the data is from and which genetic variants were used to calculate each score.
       </div>
       <div class="text">
-        Your data is never sent outside the U.S. for storage or processing. You have the option for all traces of your DNA data to be completely deleted after we send you the report.
+        Your data is never sent outside the U.S. for storage or processing. By default, we'll email the report to you, but we can also send you an encrypted report.
         <br>
         <i><br>We accept all raw DNA formats (.vcf, .txt, etc.)<br></i>
-        <div class="file-format highlight">Email us to get a secure link to upload your raw DNA data file: <a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer">team@polycypher.org</a></div>
+        <div class="file-format highlight">You will be directed to our upload form after payment. <br>Alternatively, email us to get a secure link to upload your raw DNA data file: <a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer">team@polycypher.org</a></div>
         <div class="file-format highlight"><a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer"></a></div>
         <div class="button-container">
           <a href="mailto:team@polycypher.org" class="button">Email Now</a>
           </div>
           <div class="file-format">
-          <strong>Note:</strong> Your data is kept strictly confidential and is never shared with any third parties. You have the option to request all traces of your DNA data to be deleted from our records once you have received your report.
+          <strong>Note:</strong> Your data is kept strictly confidential. You have the option to request all traces of your DNA data to be deleted from our records once you have received your report.
           <br>&nbsp;
         </div>
       
@@ -262,23 +257,60 @@
       <div class="text">
       </div>
       <img src="https://i.imgur.com/5UFV3aT.png" alt="Logo" style="inline-size: 50px; block-size: 50px;">
+      <div class="card-container">
+        <div class="card">
+          <h3><b>Get the Complete Report</b></h3>
+          <p><i>I want to see everything (1000+ polygenic scores)</i></p>
+          <h2 style="font-size: 16px;">$349</h2>
+          <a href="#" onclick="window.location.href='https://www.paypal.com/paypalme/polycypher/349';return false;" class="button">Buy Now</a>
+        </div>
+        <div class="card">
+          <h3><b>Get Individual Polygenic Scores</b></h3>
+          <p><i>I'm interested in only a few polygenic scores</i></p>
+          <h2 style="font-size: 16px;">$10 per score category</h2>
+          <input type="range" min="1" max="50" value="1" id="myRange">
+          <p>Number of diseases or traits: <span id="demo">1</span></p>
+          <a href="https://www.paypal.com/paypalme/polycypher/10" id="paypalLink" class="button">Buy Now</a>
       </div>
+      </div>
+      <div style="text-align: center;">
+        <div class="text">
+          <i>After payment, you'll be directed to a DNA data upload form.</i>
+        </div>
+      </div>      
+  <div class="progress-wrap btn-right-side">
+    <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+  </div>
+  <script type="text/javascript">
+    var offset = 50;
+    var duration = 500;
+    jQuery(window).on('load', function() {
+      jQuery(window).on('scroll', function() {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery('.progress-wrap').addClass('active-progress');
+        } else {
+          jQuery('.progress-wrap').removeClass('active-progress');
+        }
+      });
+      jQuery('.progress-wrap').on('click', function(e) {
+        e.preventDefault();
+        jQuery('html, body').animate({})
+  </script>
+  </div>
 
+  <h1 class="subpage-header-title" style="color: #fff;   margin-block-start: 0%;"><b><br></b></h1>
 
-	<div class="card-container">
-	  <div class="card">
-	    <h3><b>Get the Complete Report</b></h3>
-	    <p><i>I want to see everything (1000+ polygenic scores)</i></p>
-	    <h2 style="font-size: 16px;">$349</h2>
-	    <a href="#" onclick="window.location.href='https://www.paypal.com/paypalme/polycypher';return false;" class="button">Buy Now</a>
-	  </div>
-	  <div class="card">
-	    <h3><b>Get Individual Polygenic Scores</b></h3>
-	    <p><i>I'm interested in only a few polygenic scores</i></p>
-	    <h2 style="font-size: 16px;">$10 per score category</h2>
-	    <a href="#" onclick="window.location.href='https://www.paypal.com/paypalme/polycypher';return false;" class="button">Buy Now</a>
-	  </div>
-	</div>
+  <div class="card-container">
+    <div class="card" style="display: block !important; position: relative !important; inline-size: 85% !important; block-size: auto !important; min-inline-size: 85% !important; max-inline-size: 85% !important; box-sizing: border-box !important; padding: 20px !important; text-align: center !important; border: 1px solid black !important;">
+        <h1 style="font-size: 40px !important;"><b>Our Refund Policy: full refund for any reason</b></h1>
+        <p style="font-size: 16px !important; text-align: start;">Your satisfaction is our top priority. We aim to provide accurate and high-quality polygenic score reports, and we want you to be completely satisfied with the product you receive. If, for any reason, you are not entirely satisfied, we will give you a refund.</p>
+        <p style="font-size: 16px !important; text-align: start;">Our policy offers you a refund <b>at any time</b> if you are unsatisfied with our service <b>for any reason.</b></p>
+        <p style="font-size: 16px !important; text-align: start;">We offer refunds at <b>any percentage</b> of your order. The refund amount is entirely your decision, and we will honor it <b>unconditionally.</b></p>
+    </div>
+</div>
+
 
   <div data-carbon-type="footer" data-carbon-id="208" class="carbon carbon-208 carbon-location-footer">
     <section data-particle_enable="false" data-particle-mobile-disabled="false" class="carbon-section carbon-top-section carbon-element carbon-element-4af68325 carbon-section-full_width carbon-section-height-default carbon-section-height-default" data-id="carbonated" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -387,27 +419,6 @@
         </div>
       </div>
   </div>
-  <div class="progress-wrap btn-right-side">
-    <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-    </svg>
-  </div>
-  <script type="text/javascript">
-    var offset = 50;
-    var duration = 500;
-    jQuery(window).on('load', function() {
-      jQuery(window).on('scroll', function() {
-        if (jQuery(this).scrollTop() > offset) {
-          jQuery('.progress-wrap').addClass('active-progress');
-        } else {
-          jQuery('.progress-wrap').removeClass('active-progress');
-        }
-      });
-      jQuery('.progress-wrap').on('click', function(e) {
-        e.preventDefault();
-        jQuery('html, body').animate({})
-  </script>
-  </div>
 </div>
 </div>
 <div class="wrapper">
@@ -419,10 +430,19 @@
 </div>
 
 
-
 </body>
 </html>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    var paypalLink = document.getElementById("paypalLink");
 
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+        paypalLink.href = 'https://www.paypal.com/paypalme/polycypher/' + this.value * 10;
+    }
+</script>
 <style>
 :root {
   font-size: 20px;
