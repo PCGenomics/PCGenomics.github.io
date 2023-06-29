@@ -232,7 +232,7 @@
         Your data is never sent outside the U.S. for storage or processing. By default, we'll email the report to you, but we can also send you an encrypted report.
         <br>
         <i><br>We accept all raw DNA formats (.vcf, .txt, etc.)<br></i>
-        <div class="file-format highlight">You will be directed to our upload form after payment. <br>Alternatively, email us to get a secure link to upload your raw DNA data file: <a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer">team@polycypher.org</a></div>
+        <div class="file-format highlight">The link to upload your files will appear on this page after payment. <br>Alternatively, email us to get a secure link to upload your raw DNA data file: <a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer">team@polycypher.org</a></div>
         <div class="file-format highlight"><a href="mailto:reports@polygenicscores.com" target="_blank" rel="noopener noreferrer"></a></div>
         <div class="button-container">
           <a href="mailto:team@polycypher.org" class="button">Email Now</a>
@@ -248,7 +248,7 @@
           <li>Identification of potential carriers of genetic disorders not immediately apparent through standard genetic testing.</li>
           <li>Informed decision-making regarding gamete donor selection.</li>
           <li>Access to personalized reports containing polygenic scores, scientific study references, and genetic variant information.</li>
-          <li>Affordable and easy-to-interpret reports.</li><br>
+          <br>
           <div class="button-container">
             <a href="mailto:team@polycypher.org" class="button">Learn more about gamete donation</a>
             </div></ul>
@@ -256,12 +256,22 @@
       <div class="text">
       </div>
       <img src="https://i.imgur.com/5UFV3aT.png" alt="Logo" style="inline-size: 50px; block-size: 50px;">
+     
+      <script>
+        function showHiddenSection() {
+          var hiddenSection = document.getElementById("hidden-section");
+          hiddenSection.style.display = "block";
+        }
+      </script>
+      
       <div class="card-container">
         <div class="card">
           <h3><b>Get the Complete Report</b></h3>
           <p><i>I want to see everything (1000+ polygenic scores)</i></p>
-          <h2 style="font-size: 16px;">$349</h2>
-          <a href="#" onclick="window.location.href='https://www.paypal.com/paypalme/polycypher/349';return false;" class="button">Buy Now</a>
+          <h2 style="font-size: 16px;">$349 per individual</h2>
+          <input type="range" min="1" max="50" value="1" id="myRange2">
+          <p>Number of individuals: <span id="demo2">1</span></p>
+          <a href="https://www.paypal.com/paypalme/polycypher/349" id="paypalLink2" class="button" onclick="window.open(this.href, '_blank'); showHiddenSection(); return false;">Buy Now</a>
         </div>
         <div class="card">
           <h3><b>Get Individual Polygenic Scores</b></h3>
@@ -269,14 +279,16 @@
           <h2 style="font-size: 16px;">$10 per score category</h2>
           <input type="range" min="1" max="50" value="1" id="myRange">
           <p>Number of diseases or traits: <span id="demo">1</span></p>
-          <a href="https://www.paypal.com/paypalme/polycypher/10" id="paypalLink" class="button">Buy Now</a>
+          <a href="https://www.paypal.com/paypalme/polycypher/10" id="paypalLink" class="button" onclick="window.open(this.href, '_blank'); showHiddenSection(); return false;">Buy Now</a>
+        </div>
       </div>
-      </div>
+      
       <div style="text-align: center;">
         <div class="text">
-          <i>After payment, you'll be directed to a DNA data upload form.</i>
+          <i>After payment, the upload form will appear below.</i>
         </div>
-      </div>      
+      </div>    
+
   <div class="progress-wrap btn-right-side">
     <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
@@ -298,6 +310,88 @@
         jQuery('html, body').animate({})
   </script>
   </div>
+
+
+  <div id="hidden-section" style="display: none;">
+    <header class="subpage-header-suc" style="position: relative; height: 50vh; width: 100%; overflow: hidden;">
+  <div class="subpage-header-suc-background"></div>
+  <div class="subpage-header-suc-content" style="position: absolute; top: calc(50% - 50px); left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h1 class="subpage-header-suc-title" style="color: #fff !important; line-height: 1 !important;"><b><strong>Order Complete!</strong></b></h1>
+    <p class="subpage-header-suc-description" style="color: rgba(255, 255, 255, 0.803)"><i></i></p>
+  </div>
+</header>
+
+  <div data-carbon-type="wp-page" data-carbon-id="2852" class="carbon carbon-2852 gradient-background bodye" id="gradient-background" style="padding: 0 !important;">
+  <section data-particle_enable="false" data-particle-mobile-disabled="false" class="carbon-section carbon-top-section carbon-element carbon-element-5b3f2a73 carbon-section-boxed carbon-section-height-default carbon-section-height-default" data-id="carbonated" data-element_type="section" style="background-color: #f2f2f2;">
+    <div class="carbon-container carbon-column-gap-default" style="display: flex; justify-content: center; align-items: center; width: 1000vw; height: 30vh;">
+      <div class="carbon-element carbon-element-4eb5ad25 carbon-widget__width-initial animated-fast carbon-widget carbon-widget-text-editor animated fadeIn" data-id="carbonated" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+        <div class="carbon-widget-container">
+          <p>
+            <b>Thank you</b> for choosing PolyCypher!
+            <div class="carbon-element carbon-element-10c38a0b animated-fast carbon-widget carbon-widget-image animated fadeIn" data-id="carbonated" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+              <div class="carbon-widget-container">
+                <img decoding="async" width="50" height="50" src="../images/blackpcglogo.svg" class="" alt="" loading="lazy">
+              </div>
+            </div>
+            One last step. Upload your raw DNA data at this form:
+          </p>
+          <a onclick="navigateToForm()" target="_blank" class="button" style="display: inline-block; padding: 10px 20px; font-size: 20px; cursor: pointer; text-align: center; text-decoration: none; outline: none; color: #fff; background-color: #55b2c9; border: none; border-radius: 15px; box-shadow: 0 3px rgb(117, 195, 224); transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;" onmouseover="this.style.backgroundColor='#3d8ca1'; this.style.boxShadow='0 4px rgb(92, 170, 200)'; this.style.transform='scale(1.02)';" onmouseout="this.style.backgroundColor='#55b2c9'; this.style.boxShadow='0 3px rgb(117, 195, 224)'; this.style.transform='scale(1)';" onmousedown="this.style.transform='scale(0.98)';" onmouseup="this.style.transform='scale(1.02)';">Upload</a>
+
+          <script>
+            function navigateToForm() {
+              window.open('https://forms.gle/t1qMqTodspoQwHnR8', '_blank');
+            }
+          </script>              
+        </div>
+        <p style="font-size: 8px; font-style: italic;"></p>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+<script>
+window.addEventListener('mousemove', function(e) {
+  var x = e.clientX / window.innerWidth * 100;
+  var y = e.clientY / window.innerHeight * 100;
+  document.getElementById('gradient-background').style.backgroundPosition = x + '% ' + y + '%';
+});
+</script>
+
+<style>
+.bodye {
+  margin: 0;
+  position: relative;
+  top: -10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: gradientShift 10s ease-in-out infinite;
+  background-image: linear-gradient(60deg, #c9ecf5bf, #edd3ffc0, #fde5f9c3);
+}
+</style>
+
+
+<script>
+  window.addEventListener('message', function(event) {
+    if (event.origin === 'https://polycypher.org' && event.data === 'ready') {
+      var iframe = document.querySelector('#hidden-section iframe');
+      var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+      var header = iframeDocument.querySelector('.header');
+      var footer = iframeDocument.querySelector('.footer');
+      
+      if (header) {
+        header.style.display = 'none';
+      }
+      
+      if (footer) {
+        footer.style.display = 'none';
+      }
+    }
+  });
+</script>
 
   <h1 class="subpage-header-title" style="color: #fff;   margin-block-start: 0%;"><b><br></b></h1>
 
@@ -432,16 +526,26 @@
 </body>
 </html>
 <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    var paypalLink = document.getElementById("paypalLink");
+    var slider1 = document.getElementById("myRange");
+    var output1 = document.getElementById("demo");
+    var paypalLink1 = document.getElementById("paypalLink");
+
+    var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("demo2");
+    var paypalLink2 = document.getElementById("paypalLink2");
 
     // Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-        paypalLink.href = 'https://www.paypal.com/paypalme/polycypher/' + this.value * 10;
+    slider1.oninput = function() {
+        output1.innerHTML = this.value;
+        paypalLink1.href = 'https://www.paypal.com/paypalme/polycypher/' + this.value * 10;
+    }
+
+    slider2.oninput = function() {
+        output2.innerHTML = this.value;
+        paypalLink2.href = 'https://www.paypal.com/paypalme/polycypher/' + this.value * 349;
     }
 </script>
+
 <style>
 :root {
   font-size: 20px;
@@ -541,6 +645,27 @@ p:not(:last-child) {
 			block-size: auto;
 			border-radius: 8px;
 		}
+
+
+    .subpage-header-suc {
+  position: relative;
+}
+
+.subpage-header-suc-background {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 200%;
+  block-size: 70%;
+  background-image: url(../images/longhead.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  opacity: 1;
+  filter: brightness(0.5);
+  animation: parallax 1000s linear infinite;
+}
+
 .subpage-header {
   position: relative;
   block-size: 300px;
@@ -577,6 +702,36 @@ p:not(:last-child) {
   z-index: 1;
   color: white;
 }
+
+.subpage-header-suc-content {
+  position: relative;
+  z-index: 1;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.subpage-header-suc-title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subpage-header-suc-description {
+  color: rgba(255, 255, 255, 0.803);
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+@media (max-inline-size: 768px) {
+  .subpage-header-suc-title {
+    font-size: 3rem;
+  }
+  .subpage-header-suc-description {
+    font-size: 1.5rem;
+  }
+}
+
 
 .subpage-header-title {
   font-size: 3rem;
